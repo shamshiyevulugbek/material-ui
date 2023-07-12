@@ -1,0 +1,62 @@
+.formLogin{
+  width: 100%;
+  .error{
+    color:var(--error);
+    font-size: 10px;
+    font-family: var(--font-family);
+    padding-left: 17px;
+  }
+  .extra{
+    // background-color:red;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    .remember{
+      font-size: 13px;
+      font-family: Golos Text;
+      @media (min-width:900px){
+        font-size: 16px;
+        font-weight: 400;
+    }
+      color:var(--gray)
+    }
+    a{
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: underline;
+      text-decoration-color: var(--forgot-bottom) ;
+      background-color: var(--main);
+      font-family: Poppins;
+  
+      /* Create the gradient. */
+      background-image: linear-gradient(to bottom, var(--forgot-top), var(--forgot-bottom));
+      
+      /* Set the background size and repeat properties. */
+      background-size: 100%;
+      background-repeat: repeat;
+
+      /* Use the text as a mask for the background. */
+      /* This will show the gradient as a text color rather than element bg. */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      font-size: 13px;
+      @media (min-width:900px){
+        font-size: 16px;
+    }
+    }
+  }
+  .bottom{
+    font-family: var(--font-family);
+    text-align: center;
+    color:var(--gray);
+
+    a{
+      text-decoration: none;
+      color:var(--white)
+    }
+  }
+}

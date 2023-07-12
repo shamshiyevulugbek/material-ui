@@ -1,0 +1,30 @@
+.createAccount{
+  .phone{
+    width: 100%;
+    padding: 16px;
+    // background-color: red;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    border:1px solid var(--gray);
+
+    input{
+      background-color: transparent;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color:var(--white);
+      border:none;
+    }
+
+  }
+  .bottom{
+    font-family: var(--font-family);
+    text-align: center;
+    color:var(--gray);
+
+    a{
+      text-decoration: none;
+      color:var(--white)
+    }
+  }
+}

@@ -1,0 +1,22 @@
+button{
+  &.buttonNotReadyToClick{
+    font-family: var(--font-family);
+    background-color: var(--button-primary);
+    text-transform: none;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: none;
+
+    &:hover{
+      background-color: var(--button-primary);
+    }
+  }
+  &.buttonReadyToClick{
+    font-family: var(--font-family);
+    background-image: linear-gradient(to bottom,var(--button-top),var(--button-bottom));
+    text-transform: none;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+}

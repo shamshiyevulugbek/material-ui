@@ -1,0 +1,32 @@
+.formAuth{
+  padding: 56px;
+  background-color:var(--bg-form);
+  border-radius: 18px;
+
+  @media (min-width:1536px){
+    width: 450px;
+  }
+  .logoContainer{
+    width: 80%;
+    margin-bottom: 24px;
+    .logo{
+      max-width: 100%;
+    } 
+  }
+  .heading{
+    color:var(--white);
+    line-height: 48px;
+    font-size: 32px;
+    font-family: Poppins;
+    white-space: 600px;
+  }
+  .text{
+    color:var(--white);
+    line-height: 24px;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  
+}

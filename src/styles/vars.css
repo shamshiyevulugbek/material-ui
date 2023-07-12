@@ -1,0 +1,75 @@
+:root {
+    --header-height: 56px;
+    --subheader-height: 66px;
+    --font-family: "SF Pro Display";
+
+    --PhoneInputCountrySelectArrow-color:white !important;
+    /*colors*/
+    --black: #262626;
+    --white: #ffffff;
+    --light-gray: #F7F8FC;
+    --gray: #7F92A0;
+    --main: #1da1f2;
+
+    /*--bg-gray: #E5E5E5;*/
+    --success: #2BCBBA;
+    /*--bg-gray: #F7F8FC;*/
+    --bg-gray: #f5f5f517;
+    --bg-black:#181A24;
+    --bg-form:#232634;
+    --bg-modal:#292E3C;
+    
+    --error: #FF5A5F;
+
+    --skeleton: rgba(127, 146, 160, 0.15);
+    
+    /* button */
+    --button-primary:#292E3C;
+    --button-top:#1DA1F2;
+    --button-bottom:#003CC5;
+
+    /* forgot */
+    --forgot-top:#1DA1F2;
+    --forgot-bottom:#003CC5;
+
+
+    /*text*/
+    --text-primary: #262626;
+    --text-secondary: #7F92A0;
+
+    /*primary*/
+    --primary-main: #1DA1F2;
+    --primary-dark: #1470a9;
+    --primary-light: #4ab3f4;
+    --primary-contrast-text: #fff;
+
+    /*secondary*/
+    --secondary-main: #7F92A0;
+    --secondary-dark: #586670;
+    --secondary-light: #98a7b3;
+    --secondary-contrast-text: #262626;
+
+    /*error*/
+    --error-main: #FF5A5F;
+    --error-dark: #b23e42;
+    --error-light: #ff7b7f;
+    --error-contrast-text: #fff;
+
+    /*warning*/
+    --warning-main: #FD9644;
+    --warning-dark: #b1692f;
+    --warning-light: #fdab69;
+    --warning-contrast-text: #fff;
+
+    /*success*/
+    --success-main: #2BCBBA;
+    --success-dark: #1e8e82;
+    --success-light: #55d5c7;
+    --success-contrast-text: #fff;
+
+    /*info*/
+    --info-main: #706FD3;
+    --info-dark: #4e4d93;
+    --info-light: #4e4d93;
+    --info-contrast-text: #fff;
+}

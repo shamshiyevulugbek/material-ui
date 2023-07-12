@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--font-family), serif;
+
+    scrollbar-width: none;
+    scrollbar-color: rgba(0, 0, 0, 0.54) rgba(0, 0, 0, 0);
+
+    outline: none;
+
+    -webkit-tap-highlight-color: transparent;
+
+    /*user-select: none;*/
+    /*-webkit-user-select: none;*/
+    /*-ms-user-select: none;*/
+    /*-moz-user-select: none;*/
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+html {
+    background-color: var(--bg-gray);
+}
+
+/*НЕ СТИРАТЬ*/
+
+/*@media (min-width: 1030px) {*/
+/*    .MAX_WIDTH_PAGE {*/
+/*        max-width: 400px;*/
+/*        margin: 0 auto;*/
+/*    }*/
+
+/*    .MAX_WIDTH_PAGE_FIXED {*/
+/*        max-width: 400px;*/
+/*        position: fixed;*/
+/*        left: 50%;*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*}*/

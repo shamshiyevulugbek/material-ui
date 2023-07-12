@@ -1,0 +1,28 @@
+.authBottom{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-family: Golos Text;
+  .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 24px;
+    a{
+      color:var(--gray);
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .lang{
+      color:var(--gray);
+      display: flex;
+      align-items: center;
+      gap:2px;
+    }
+  }
+  .text{
+    color:var(--gray);
+    font-size: 16px;
+  }
+}

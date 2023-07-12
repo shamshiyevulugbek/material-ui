@@ -1,0 +1,18 @@
+.modal{
+  color:var(--white);
+  background-color: var(--bg-modal);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 56px;
+  border-radius: 18px;
+  transform: translate(-50%,-50%);
+  .title{
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .subtitle{
+    font-size:16px;
+    margin-bottom: 24px;
+  }
+}
