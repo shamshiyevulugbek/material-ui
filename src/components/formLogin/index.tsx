@@ -127,7 +127,7 @@ export const FormLogin = ({
                   </IconButton>
                 </InputAdornment>
               }
-              label='Password'
+              label='Password1'
             />
           )}
         />

@@ -103,8 +103,12 @@ export const FormFillDetails = () => {
             name='username'
             control={control}
             rules={{ required: true, pattern: /^[a-z0-9\.]+$/,onChange:(e)=>{
-              if(/^[a-z0-9\.]+$/.test(e.target.value)) setUserError(false)
+              if(/^[a-zA-Z0-9\.]+$/.test(e.target.value)) {
+                setValue("username",e.target.value.toLowerCase())
+                setUserError(false)
+              }
               else setUserError(true)
+        
             } }}
             render={({ field }) => (
               <TextField

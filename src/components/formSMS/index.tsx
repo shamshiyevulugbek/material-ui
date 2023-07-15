@@ -42,7 +42,8 @@ export const FormSMS = ({
         render={({field})=>(
           <BlockCode
             {...field}
-            onValidateBeforeChange={async (d) => isNumeric(d.value)}
+            inputProps={{type:'tel',maxLength:1}}
+            onValidateBeforeChange={async (d) => (isNumeric(d.value) && d.value.length === 1)}
             className={'block-code-underline' + ' ' + style.blockCode}
             onValuesChange={(data)=>{
             const sms = data.join("")

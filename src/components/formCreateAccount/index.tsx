@@ -1,6 +1,5 @@
 import React from 'react'
 import { useForm, SubmitHandler,Controller } from 'react-hook-form'
-import {TextField} from '@mui/material'
 import { DWDButton } from '../button'
 import style from "./createAccount.module.scss"
 import { Link } from 'react-router-dom'
@@ -9,6 +8,7 @@ import { useDispatch } from 'react-redux'
 import {changeTel} from "../../store/signupSlice"
 import PhoneInput from "react-phone-number-input"
 import "react-phone-number-input/style.css"
+import ru from '../../shared/uz.json'
 
 export const FormCreateAccount = ({
   changeLevel,
@@ -20,7 +20,6 @@ export const FormCreateAccount = ({
   }})
   const onSubmit: SubmitHandler<CreteateAccountInputs> = (data) => console.log(data)
   const dispatch = useDispatch()
-
   return (
     <form className={style.createAccount} onSubmit={handleSubmit(onSubmit)}>
       <Controller
@@ -29,6 +28,7 @@ export const FormCreateAccount = ({
         rules={{ required: true}}
         render={({ field }) => (
           <PhoneInput
+            labels={ru}
             {...field}
             international
             countryCallingCodeEditable={false}

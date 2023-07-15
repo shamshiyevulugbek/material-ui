@@ -1,0 +1,49 @@
+.header{
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo{
+    a{
+      display: block;
+    }
+    svg{
+      vertical-align: middle;
+      width: 180px;
+    }
+  }
+  .actions{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a{
+      position: relative;
+      color:var((--white));
+      text-decoration: none;
+
+      &[class="active"]{
+        color:var(--main);
+
+      }
+      &:hover{
+        color:var(--main);
+        &::after{
+          background-color: var(--main);
+        }
+      }
+      &::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: var(--white);
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+
+      }
+    }
+  }
+}

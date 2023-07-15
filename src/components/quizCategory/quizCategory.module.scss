@@ -1,0 +1,57 @@
+.quizCategory{
+  width: 100%;
+  background-color: var(--bg-form);
+  padding: 12px 8px;
+  font-weight: 600;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .categories{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .tabs{
+    min-height: 0;
+    gap: 32px;
+    .tab{
+      min-height: 0;
+      text-transform: none;
+      padding:0 16px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  
+  .showCategories{
+    padding: 0 8px;
+    text-transform: none;
+    flex-shrink: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color:var(--white);
+  }
+  .sort{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap:16px;
+    padding-right: 16px;
+    
+
+    .filter{
+      background-color: var(--button-primary);
+      border-radius: 20px;
+      box-shadow: none;
+      text-transform: none;
+
+      svg{
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -77,7 +77,7 @@ export const FormCreatePassword = ({changeLevel}:{changeLevel:React.Dispatch<Rea
                   </IconButton>
                 </InputAdornment>
               }
-              label='Password'
+              label='Password1'
             />
           )}
         />
@@ -131,7 +131,7 @@ export const FormCreatePassword = ({changeLevel}:{changeLevel:React.Dispatch<Rea
                   </IconButton>
                 </InputAdornment>
               }
-              label='Password'
+              label='Repeat Passwordw'
             />
           )}
         />
