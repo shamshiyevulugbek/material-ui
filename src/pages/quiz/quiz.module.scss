@@ -1,7 +1,8 @@
 .quiz{
+  position: relative;
   background-color: var(--bg-black);
   color:var(--white);
-  min-height: 100vh;
+  min-height: 1000px;
 
   .giftBackground{
     position: absolute;

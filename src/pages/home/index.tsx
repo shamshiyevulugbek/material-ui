@@ -1,6 +1,7 @@
 import React from "react"
 import Grid from '@mui/material/Unstable_Grid2'
 import {Container,Tab,Tabs} from '@mui/material'
+import {Navbar} from '../../components/navbar'
 import s from "./home.module.scss"
 
 export const Home = () => {
@@ -26,6 +27,7 @@ export const Home = () => {
         </Grid>
         </Container>
         
+        <Navbar/>
       </div>
       <div>
         <Tabs value={value} onChange={(_,v)=>setValue(v)}>            

@@ -3,6 +3,7 @@ import style from "./quiz.module.scss"
 import {Container,useMediaQuery} from "@mui/material"
 import {Header} from "../../components/header"
 import {DWDButton} from "../../components/button"
+import {Navbar} from "../../components/navbar"
 import {QuizAds} from "../../components/quizAds"
 import {QuizCategory} from "../../components/quizCategory"
 import {ReactComponent as GiftBackground} from "../../assets/imges/gift-bg.svg"
@@ -42,6 +43,8 @@ export const Quiz = () => {
         <QuizAds ads={ads}/>
 
         <QuizCategory/>
+
+        <Navbar show={true}/>
       </Container>
     </div>
   )
