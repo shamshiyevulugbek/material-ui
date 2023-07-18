@@ -22,4 +22,14 @@
       color:var(--warning-main);
     }
   }
+
+  .quizCards{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--bg-form);
+    border-radius: 20px;
+    padding: 16px;
+    margin-bottom: 100px;
+  }
 }

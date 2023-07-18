@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 16px;
 
   .categories{
     display: flex;
@@ -53,5 +54,36 @@
         vertical-align: middle;
       }
     }
+  }
+
+}
+
+.categoryBox{
+  display: flex;
+  align-items: center;
+  gap:12px;
+  transition: 0.4s;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover{
+    background-color:var(--success);
+  }
+  img{
+    width:48px;
+    height: 48px;
+    border-radius: 8px;
+    border:1px solid #D5E5FB;
+    // object-fit: cover;
+    // object-position: center;
+  }
+  .categoryName{
+    color:var(--white);
+    line-height: 24px;
+  }
+  .categoryStream{
+    color:var(--gray);
+    font-size: 12px;
+    line-height: 16px;
+
   }
 }

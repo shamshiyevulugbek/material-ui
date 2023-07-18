@@ -15,7 +15,7 @@ import style from './formFillDetails.module.scss';
 
 export const FormFillDetails = () => {
   const [open, setOpen] = React.useState<boolean>(false);
-  const [userError, setUserError] = React.useState<boolean>(true);
+  const [userError, setUserError] = React.useState<null | boolean>(null);
   const { control, handleSubmit, setValue, watch, getValues } =
     useForm<FormDetailsInput>();
   const onSubmit: SubmitHandler<FormDetailsInput> = (data) => console.log(data);
@@ -125,7 +125,7 @@ export const FormFillDetails = () => {
                 }}
                 fullWidth
                 InputProps={{
-                  endAdornment: <InputAdornment position="end">{userError?<WarningIcon/>:<TickIcon/>}</InputAdornment>
+                  endAdornment: <InputAdornment position="end">{userError ===null?null:userError?<WarningIcon/>:<TickIcon/>}</InputAdornment>
                 }}
               />
             )}

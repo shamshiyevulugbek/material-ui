@@ -1,0 +1,51 @@
+.quizCard{
+  background-color: var(--bg-modal);
+  border-radius: 20px;
+
+  .top{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom:0.1px solid var(--gray);
+    padding:16px;
+    img{
+      width: 96px;
+      height: 112px;
+      object-fit: cover;
+    }
+
+    .title{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .subtitle{
+      font-weight: 400;
+      font-size: 14px;
+      color:var(--gray);
+    }
+    .type{
+      font-weight: 400;
+      color:var(--gray);
+    }
+    .timeAndUsers{
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+  }
+  .bottom{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .fee{
+      font-size: 12px;
+      color:var(--gray);
+    }
+    .bookName{
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

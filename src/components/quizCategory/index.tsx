@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import {
   Button,
   TextField,
@@ -6,11 +7,12 @@ import {
   Tabs,
   Tab,
   IconButton,
-  Switch,
   FormControlLabel
 } from "@mui/material"
+import Grid from "@mui/material/Unstable_Grid2"
 import {DWDModal} from "../modal"
 import {DWDButton} from "../button"
+import {DWDSwitch} from "../switch"
 import {ReactComponent as MagnifierIcon} from "../../assets/imges/quizIcons/search.svg"
 import {ReactComponent as FilterIcon} from "../../assets/imges/quizIcons/filter.svg"
 import style from "./quizCategory.module.scss"
@@ -43,9 +45,10 @@ export const QuizCategory = () => {
             "& .MuiFilledInput-root:before":{border:"none"},
             "& .MuiFilledInput-root:after":{border:"none"},
             "& .MuiInputBase-root":{backgroundColor:"var(--button-primary)",paddingRight:0},
+            "& .MuiInputBase-root:hover":{backgroundColor:"var(--button-primary)"},
             "& .MuiInputBase-input::placeholder":{color:"var(--white)",opacity:1},
             "& .MuiFilledInput-root.MuiInputBase-root:hover:before":{borderBottom:"none"},
-            "& .MuiInputBase-input":{color:"#fff",padding:0,backgroundColor:"var(--button-primary)"},
+            "& .MuiInputBase-input":{color:"var(--white)",padding:0,backgroundColor:"var(--button-primary)"},
             " .MuiInputBase-input:hover":{border:"none"}
           }} 
           InputProps={{
@@ -63,20 +66,40 @@ export const QuizCategory = () => {
         />
       </div>
       <DWDModal open={openCategory} onClose={()=>setOpenCategory(false)} title='ALL CATEGORIES' closeBtn={()=>{setOpenCategory(false)}}>
-        <div>Bu yerda categories. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam tenetur unde illum eius! Minima unde sapiente, quo inventore ipsum dolor!</div>
+        <Grid sx={{maxHeight:"50vh",overflowY:"auto"}} container rowSpacing={2} columnSpacing={1}>
+          {
+            categories.map((v,i)=>(
+            <Grid key={i} sm={6}>
+              <div onClick={()=>{
+                setValue(i+1)
+                setOpenCategory(false)
+              }} className={style.categoryBox}>
+                <img src={v.img} alt={v.name} />
+                <div className={style.categoryDescription}>
+                  <p className={style.categoryName}>
+                    {v.name}
+                  </p>
+                  <p className={style.categoryStream}>
+                    {v.streams} Streams
+                  </p>
+                </div>
+              </div>
+            </Grid>
+            ))
+          }
+        </Grid>
       </DWDModal>
       <DWDModal open={openFilter} onClose={()=>setOpenFilter(false)} title='Filter' closeBtn={()=>{setOpenFilter(false)}}>
         <div>
           <FormControlLabel
-            sx={{display:"flex",justifyContent:"space-between",margin:"0 0 24px",
-            "& .MuiSwitch-root":{padding:"6px"}}}
-            control={<Switch/>}
+            sx={{display:"flex",width:300,alignItems:"center",justifyContent:"space-between",margin:"0 0 24px"}}
+            control={<DWDSwitch/>}
             label="Автоигры"
             labelPlacement="start"
           />
           <FormControlLabel
-            sx={{display:"flex",justifyContent:"space-between",margin:"0 0 24px"}}
-            control={<Switch/>}
+            sx={{display:"flex",width:300,alignItems:"center",justifyContent:"space-between",margin:"0 0 24px"}}
+            control={<DWDSwitch/>}
             label="Платный вход"
             labelPlacement="start"
           />

@@ -4,11 +4,14 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  padding: 56px;
+  padding: 32px;
   border-radius: 18px;
   transform: translate(-50%,-50%);
   .title{
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
     margin-bottom: 15px;
   }
   .subtitle{
@@ -17,7 +20,7 @@
   }
   .close{
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 16px;
+    top: 16px;
   }
 }
