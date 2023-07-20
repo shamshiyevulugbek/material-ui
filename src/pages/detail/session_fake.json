@@ -1,0 +1,33 @@
+{
+  "id": 204,
+  "participant_number": 0,
+  "participant_finish_number": 0,
+  "quiz": {
+      "id": 114,
+      "name": "Quiz name",
+      "description": "This game 1 step of the Grand Prize 2 home flat with 76kv metres, Получи шанс выиграть айфон часы...This game 1 step of the Grand Prize 2 home flat with 76kv metres, Получи шанс выиграть айфон часы...This game 1 step of the Grand Prize 2 home flat with 76kv metres, Получи шанс выиграть айфон часы...",
+      "images": [],
+      "creator": "genacr0co"
+  },
+  "create_date": "2023-07-11T13:38:54.243276+05:00",
+  "question_time": 3,
+  "send_question": false,
+  "send_answer": false,
+  "finish_date": null,
+  "winner": null,
+  "is_opened": true,
+  "creator": "genacr0co",
+  "type": 2,
+  "expected_date": "2023-01-22T17:00:50.215Z",
+  "expected_participants": 2147483647,
+  "time_spend": 0,
+  "expected_end_date": "2023-07-20T08:10:50.215Z",
+  "winner_number": 3,
+  "question_number": 3,
+  "is_code": null,
+  "reward": "zxc",
+  "status": "open to registration",
+  "promo_text": null,
+  "org": null,
+  "cent_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYWxhaGFmYSIsImV4cCI6MTY4OTkyNzMxNX0.-PuQ_EWfJW8WMsTXQum9WdbcHxMrjDcJu2Fb2SxQnKE"
+}

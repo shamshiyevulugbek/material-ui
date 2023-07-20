@@ -1,0 +1,113 @@
+{
+  "count": 15,
+  "next": null,
+  "next_offset": 15,
+  "previous_offset": 0,
+  "previous": null,
+  "results": [
+    { "id":3,
+      "name":"Education and training",
+      "counter":144,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    { 
+      "id":5,
+      "name":"Religion",
+      "counter":100,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    { 
+      "id":6,
+      "name":"History ann future",
+      "counter":98,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":7,
+      "name":"Cinema and theatre",
+      "counter":15,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":8,
+      "name":"Books",
+      "counter":174,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":9,
+      "name":"Travel to forign countries",
+      "counter":250,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":11,
+      "name":"Vlog",
+      "counter":190,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":12,
+      "name":"Drama and romantic stream",
+      "counter":144,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":13,
+      "name":"Music",
+      "counter":890,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":15,
+      "name":"Compitions",
+      "counter":520,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":16,
+      "name":"School and young students stream",
+      "counter":144,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":17,
+      "name":"Drama and romantic stream",
+      "counter":144,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":19,
+      "name":"Programming",
+      "counter":189,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":20,
+      "name":"News",
+      "counter":100,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    },
+    {
+      "id":21,
+      "name":"Movies",
+      "counter":144,
+      "image":"https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=2000",
+      "status":1
+    }
+  ]
+}

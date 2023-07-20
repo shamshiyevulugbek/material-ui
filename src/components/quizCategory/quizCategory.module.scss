@@ -68,6 +68,15 @@
   &:hover{
     background-color:var(--success);
   }
+  .allImage{
+    width:48px;
+    height: 48px;
+    border-radius: 8px;
+    border:1px solid #D5E5FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   img{
     width:48px;
     height: 48px;

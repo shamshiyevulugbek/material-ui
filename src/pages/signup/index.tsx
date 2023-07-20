@@ -6,8 +6,8 @@ import { FormCreateAccount } from '../../components/formCreateAccount'
 import { FormSMS } from '../../components/formSMS'
 import { SignupDetails } from '../../components/signupDetails'
 import { FormCreatePassword } from '../../components/formCreatePassword'
-import { ReactComponent as Image1 } from '../../assets/imges/signup1.svg'
-import { ReactComponent as Image2 } from '../../assets/imges/login1.svg'
+import { ReactComponent as Image1 } from '../../assets/imges/auth/signup1.svg'
+import { ReactComponent as Image2 } from '../../assets/imges/auth/login1.svg'
 import style from "./signup.module.scss"
 import {SignupLevels} from "../../assets/types"
 

@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import style from "./authBottom.module.scss"
 import {Select,MenuItem} from "@mui/material"
 import {ReactComponent as ArrowDown} from "../../assets/imges/arrow-down.svg"
-import {ReactComponent as FlagUz} from "../../assets/imges/flag_uz.svg"
+import {ReactComponent as FlagUz} from "../../assets/imges/auth/flag_uz.svg"
 
 export const AuthBottom = () => {
   return (

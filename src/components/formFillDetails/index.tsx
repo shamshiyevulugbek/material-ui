@@ -9,8 +9,8 @@ import { DWDModal } from '../modal';
 import { FormDetailsInput } from '../../assets/types';
 import { ReactComponent as ArrowIcon } from '../../assets/imges/arrow-down.svg';
 import { ReactComponent as CalendarIcon } from '../../assets/imges/calendar-edit.svg';
-import { ReactComponent as WarningIcon } from '../../assets/imges/warning.svg';
-import { ReactComponent as TickIcon } from '../../assets/imges/tick-circle.svg';
+import { ReactComponent as WarningIcon } from '../../assets/imges/auth/warning.svg';
+import { ReactComponent as TickIcon } from '../../assets/imges/auth/tick-circle.svg';
 import style from './formFillDetails.module.scss';
 
 export const FormFillDetails = () => {

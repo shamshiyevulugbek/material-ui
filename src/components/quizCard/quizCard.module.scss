@@ -17,15 +17,21 @@
     .title{
       font-size: 20px;
       font-weight: 600;
+      line-height: 27px;
+      margin-bottom: 4px;
     }
     .subtitle{
       font-weight: 400;
       font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 8px;
       color:var(--gray);
     }
     .type{
       font-weight: 400;
       color:var(--gray);
+      line-height: 14px;
+      margin-bottom: 12px;
     }
     .timeAndUsers{
       display: flex;

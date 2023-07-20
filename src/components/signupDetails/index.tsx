@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid } from '@mui/material'
-import {ReactComponent as Space} from "../../assets/imges/g8.svg"
-import {ReactComponent as Star} from "../../assets/imges/star.svg"
+import {ReactComponent as Space} from "../../assets/imges/auth/g8.svg"
+import {ReactComponent as Star} from "../../assets/imges/auth/star.svg"
 import {FormAuth} from "../formAuth"
 import {FormFillDetails} from "../formFillDetails"
 import style from "./signupDetails.module.scss"

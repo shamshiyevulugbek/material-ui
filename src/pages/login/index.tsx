@@ -5,8 +5,8 @@ import { FormAuth } from '../../components/formAuth';
 import { FormLogin } from '../../components/formLogin';
 import { FormLogin404 } from '../../components/formLogin404';
 import { AuthBottom } from '../../components/authBottom';
-import { ReactComponent as Image1 } from '../../assets/imges/login1.svg';
-import { ReactComponent as Image2 } from '../../assets/imges/login2.svg';
+import { ReactComponent as Image1 } from '../../assets/imges/auth/login1.svg';
+import { ReactComponent as Image2 } from '../../assets/imges/auth/login2.svg';
 
 export const Login: React.FC = () => {
   const [error404, setError404] = React.useState<boolean>(false);

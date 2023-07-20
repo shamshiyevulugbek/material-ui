@@ -1,10 +1,9 @@
 import React from "react"
-import {SignupLevels} from "../../assets/types"
+import {SignupLevels,FormCreatePasswordInput} from "../../assets/types"
 import {DWDButton} from "../button"
 import {ErrorBox} from "../errorBox"
 import {Controller,useForm,SubmitHandler} from "react-hook-form"
 import { Link } from "react-router-dom"
-import {FormCreatePasswordInput} from "../../assets/types"
 import {
   InputLabel,
   FormControl,

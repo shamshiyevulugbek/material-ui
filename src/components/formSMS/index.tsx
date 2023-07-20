@@ -1,12 +1,11 @@
 import React from 'react';
-import { SignupLevels } from '../../assets/types';
 import { DWDButton } from '../button';
 import { Link } from 'react-router-dom';
 import { BlockCode, isNumeric } from 'block-code';
 import { useForm,Controller } from 'react-hook-form';
 import Countdown from 'react-countdown';
 import { useSelector } from 'react-redux';
-import { Storage,SMSInputs } from '../../assets/types';
+import { Storage,SMSInputs,SignupLevels } from '../../assets/types';
 import style from './formSMS.module.scss';
 import 'block-code/style.css';
 

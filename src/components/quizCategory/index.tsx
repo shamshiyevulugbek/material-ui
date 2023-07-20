@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from "react-router-dom"
 import {
   Button,
   TextField,
@@ -18,19 +17,20 @@ import {ReactComponent as FilterIcon} from "../../assets/imges/quizIcons/filter.
 import style from "./quizCategory.module.scss"
 
 //fake categories 
-import categories from "./categories.json"
+import categories_fake from "./categories_fake.json"
 
 export const QuizCategory = () => {
   const[value,setValue] = React.useState<number>(0)
   const[openCategory,setOpenCategory] = React.useState<boolean>(false)
   const[openFilter,setOpenFilter] = React.useState<boolean>(false)
+  const allCounter = categories_fake.results.reduce((p,n)=>({id:0,name:"all",image:"img",status:1,counter:(p.counter + n.counter)}))
   return (
     <div className={style.quizCategory}>
       <div className={style.categories}>
         <Tabs className={style.tabs} sx={{"& .MuiTabs-indicator":{backgroundColor:"transparent"},"& .MuiButtonBase-root.Mui-selected":{color:"var(--white)"}}} value={value} onChange={(_,v)=>setValue(v)}>
           <Tab className={style.tab} label={"All quizes"} value={0}/>
           {
-            categories.map((v,i)=><Tab key={i+1} className={style.tab} label={v.name.split(" ")[0]} value={i+1}/>)
+            categories_fake.results.map(v => <Tab key={v.id} className={style.tab} label={v.name.split(" ")[0]} value={v.id}/>)
           }
         </Tabs>
         <Button className={style.showCategories} onClick={()=>setOpenCategory(true)}>Show all</Button>
@@ -67,20 +67,36 @@ export const QuizCategory = () => {
       </div>
       <DWDModal open={openCategory} onClose={()=>setOpenCategory(false)} title='ALL CATEGORIES' closeBtn={()=>{setOpenCategory(false)}}>
         <Grid sx={{maxHeight:"50vh",overflowY:"auto"}} container rowSpacing={2} columnSpacing={1}>
-          {
-            categories.map((v,i)=>(
-            <Grid key={i} sm={6}>
+          <Grid sm={6}>
               <div onClick={()=>{
-                setValue(i+1)
+                setValue(0)
                 setOpenCategory(false)
               }} className={style.categoryBox}>
-                <img src={v.img} alt={v.name} />
+                <div className={style.allImage}>A</div>
+                <div className={style.categoryDescription}>
+                  <p className={style.categoryName}>
+                    All Categories
+                  </p>
+                  <p className={style.categoryStream}>
+                    {allCounter.counter} Streams
+                  </p>
+                </div>
+              </div>
+          </Grid>
+          {
+            categories_fake.results.map(v => (
+            <Grid key={v.id} sm={6}>
+              <div onClick={()=>{
+                setValue(v.id)
+                setOpenCategory(false)
+              }} className={style.categoryBox}>
+                <img src={v.image} alt={v.name} />
                 <div className={style.categoryDescription}>
                   <p className={style.categoryName}>
                     {v.name}
                   </p>
                   <p className={style.categoryStream}>
-                    {v.streams} Streams
+                    {v.counter} Streams
                   </p>
                 </div>
               </div>

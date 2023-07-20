@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './formLogin.module.scss';
 import { useForm, SubmitHandler, Controller } from 'react-hook-form';
-import { ReactComponent as Circle } from '../../assets/imges/record.svg';
-import { ReactComponent as TickCircle } from '../../assets/imges/tick-circle.svg';
+import { ReactComponent as Circle } from '../../assets/imges/auth/record.svg';
+import { ReactComponent as TickCircle } from '../../assets/imges/auth/tick-circle.svg';
 import { ReactComponent as Hide } from '../../assets/imges/Hide.svg';
 import { ReactComponent as Eye } from '../../assets/imges/eye.svg';
 import { Link } from 'react-router-dom';

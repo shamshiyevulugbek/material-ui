@@ -7,13 +7,19 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 100px;
-  width: 80%;
+  width: 90%;
   backdrop-filter: blur(8px);
   border:0.2px solid rgba(255,255,255,0.2);
 
+  @media (min-width:900px){
+    width: 80%;
+  }
   .left,.middle,.right{
     display: flex;
-    gap:8px
+
+    @media (min-width:860px){
+      gap:8px;
+    }
   }
   .button{
     display: inline-flex;
